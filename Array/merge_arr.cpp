@@ -22,18 +22,22 @@ void merge(int a[], int b[], int res[], int n, int m)
     }
     while (i < n) // If array a elements are left in the array a-put in res//
     {
-        res[k++] = a[i++];
+        res[k] = a[i];
+        k++;
+        i++;
     }
     while (j < m) // If array a elements are left in array b-put in res //
     {
-        res[k++] = b[j++];
+        res[k] = b[j];
+        k++;
+        j++;
     }
 }
 
 int main()
 {
-    int a[] = {5, 4, 2, 0, 3};
-    int b[] = {8, 7, 1, 9, 11};
+    int a[] = {1, 2, 4};
+    int b[] = {1, 3, 4};
 
     int n = sizeof(a) / sizeof(a[0]);
     int m = sizeof(b) / sizeof(a[0]);

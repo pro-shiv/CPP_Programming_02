@@ -73,6 +73,7 @@ int main()
     arr.Insert(0, 5);
     arr.Insert(1, 6);
     arr.Insert(2, 9);
+    arr.Insert(1, 2);
     arr.Display();
     cout << "Deleted element is :";
     cout << arr.Delete(0) << endl;
